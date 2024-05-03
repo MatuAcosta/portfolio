@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Tecnologies from '../components/Tecnologies.astro';
+import { socials, technologies } from '../constants/consts';
+import Experience from '../components/Experience.astro';
+import SocialNetworks from '../components/SocialNetworks.astro';
+---
+
+<Layout title="Welcome to Astro.">
+    <main>
+        <section id="home" class="w-full mx-auto lg:w-[810px] pt-44 pb-8">
+            <h1 class="flex flex-row gap-x-2 items-center text-white text-4xl py-4 font-bold">
+                <img class="size-12 rounded-3xl" src="/assets/img/logo.jpeg" alt="">
+                I'm Matias 
+            </h1>
+            <h2 class="text-white text-xl">
+                a software engineer from Argentina and passionate about web development and IT in general.
+                I'm currently working at 
+                <a  class="underline text-yellow-400" target="_blank" href="https://www.bancodecorrientes.com.ar/">Banco de Corrientes</a>
+                as a full-stack developer.
+            </h2>
+            <section class="py-4">
+                <SocialNetworks social={socials}/>
+            </section>
+        </section>
+        <section id="work" class="w-full mx-auto lg:w-[810px] py-32">
+            <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
+                <img class="size-12 mr-2" src="/assets/img/stack.svg" alt="">
+                Work Experience
+            </h1>
+            <Experience />
+            <h2 class="text-white text-lg">
+                Over the last 2+ years I've been working with the following technologies:
+            </h2>
+            <Tecnologies techs={technologies}/>
+        </section>
+        <section id="projects" class="w-full mx-auto lg:w-[810px]">
+            <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
+                <img class="size-12 mr-2" src="/assets/img/stack.svg" alt="">
+                Projects
+            </h1>
+        </section>
+    </main>
+</Layout>
+
+<style>
+</style>
