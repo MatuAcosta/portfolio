@@ -1,15 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Tecnologies from '../components/Tecnologies.astro';
-import { socials, technologies } from '../constants/consts';
+import { socials, technologies, projects } from '../constants/consts';
 import Experience from '../components/Experience.astro';
 import SocialNetworks from '../components/SocialNetworks.astro';
+import Projects from '../components/Projects.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Matias Acosta Developer">
     <main>
         <section id="home" class="w-full mx-auto lg:w-[810px] pt-44 pb-8">
-            <h1 class="flex flex-row gap-x-2 items-center text-white text-4xl py-4 font-bold">
+            <h1 class="flex flex-row gap-x-4 items-center text-white text-4xl py-4 font-bold">
                 <img class="size-12 rounded-3xl" src="/assets/img/logo.jpeg" alt="">
                 I'm Matias 
             </h1>
@@ -23,7 +24,7 @@ import SocialNetworks from '../components/SocialNetworks.astro';
                 <SocialNetworks social={socials}/>
             </section>
         </section>
-        <section id="work" class="w-full mx-auto lg:w-[810px] py-32">
+        <section id="work" class="w-full mx-auto lg:w-[810px] py-16">
             <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
                 <img class="size-12 mr-2" src="/assets/img/stack.svg" alt="">
                 Work Experience
@@ -34,11 +35,17 @@ import SocialNetworks from '../components/SocialNetworks.astro';
             </h2>
             <Tecnologies techs={technologies}/>
         </section>
-        <section id="projects" class="w-full mx-auto lg:w-[810px]">
+        <section id="projects" class="w-full mx-auto lg:w-[900px] py-32">
             <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
-                <img class="size-12 mr-2" src="/assets/img/stack.svg" alt="">
-                Projects
+                <img class="size-12 mr-2" src="/assets/img/projects.svg" alt="">
+                Personal Projects
             </h1>
+            {
+                projects.map(project => (
+                    <Projects  project={project} />
+
+                ))
+            }
         </section>
     </main>
 </Layout>

@@ -1,8 +1,43 @@
-<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-    <nav class="flex flex-row gap-x-10 text-white border-2 p-3 border-red-200 rounded-lg">
-        <a class="visited:bg-green-700" href="#home">Home</a>
-        <a class="data-[active=true]:bg-red-200" class="" href="#work">Work Experience</a>
-        <a class="data-[active=true]:bg-red-200" class="" href="#projects">Projects</a>
-        <a class="data-[active=true]:bg-red-200" class="" href="#contact">Contact</a>
+---
+
+    const sections = [
+        {
+            url: '#home',
+            title: 'Home'
+        },
+        {
+            url: '#work',
+            title: 'Work Experience'
+        },
+        {
+            url: '#projects',
+            title: 'Projects'
+        },
+        {
+            url: '#aboutme',
+            title: 'About Me'
+        }
+    ]
+
+---
+<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2  opacity-40 hover:opacity-100">
+    <nav class="flex flex-row gap-x-10 text-white border-2 border-slate-600 p-3 rounded-xl font-bold">
+        {
+            sections.map((section: {url: string, title: string}) => (
+                <a href={section.url}>{section.title}</a>
+            ))
+        }
     </nav>
 </header>
+<script>
+    const nav = document.querySelector('nav');
+    const links = nav?.querySelectorAll('a');
+    links?.forEach(link => {
+        link.addEventListener('click', (e: any) => {
+            links.forEach(l => {
+                l.classList.remove('text-blue-400');
+            });
+            e.target?.classList?.add('text-blue-400');
+        });
+    });
+</script>

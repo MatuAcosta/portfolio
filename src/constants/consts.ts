@@ -61,3 +61,41 @@ export const socials = [
         url: `cv_acostamatias.pdf`
     }
 ]
+
+export const projects = [
+    {
+        name: 'Pictopic - A simple image sharing platform',
+        description: 'Pictopic is a simple image sharing platform that allows users to upload images and share them with the world about a topic choose by AI.',
+        url: 'https://pictopic.vercel.app/home',
+        github: 'https://github.com/MatuAcosta/pictopic',
+        src: '/assets/img/pictopic.png',
+        tecnologies: [{
+            name: 'Angular',
+            icon: '/assets/img/angular.svg'
+        }, 
+        {
+            name: 'Tailwind',
+            icon: '/assets/img/tailwindcss.svg'
+        },
+        {
+            name: 'Firebase',
+            icon: '/assets/img/firebase.svg'
+        }
+    ]}, 
+    {
+        name: 'Cabañas Iberá - A website for a rural tourism business',
+        description: 'Cabañas Iberá is a website for a rural tourism business located in the Iberá Wetlands, Corrientes, Argentina.',
+        url: 'https://www.cabanasibera.com.ar/',
+        github: '',
+        src: '/assets/img/cabanasibera.png',
+        tecnologies: [{
+            name: 'Angular',
+            icon: '/assets/img/angular.svg'
+        }, 
+        {
+            name: 'Tailwind',
+            icon: '/assets/img/tailwindcss.svg'
+        },
+    ]
+    }
+]
