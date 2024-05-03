@@ -63,7 +63,8 @@ export const socials = [
 ]
 
 export const projects = [
-    {
+    {   
+        colortitleStyle: 'text-emerald-700',
         name: 'Pictopic - A simple image sharing platform',
         description: 'Pictopic is a simple image sharing platform that allows users to upload images and share them with the world about a topic choose by AI.',
         url: 'https://pictopic.vercel.app/home',
@@ -83,6 +84,7 @@ export const projects = [
         }
     ]}, 
     {
+        colortitleStyle: 'text-lime-800',
         name: 'Cabañas Iberá - A website for a rural tourism business',
         description: 'Cabañas Iberá is a website for a rural tourism business located in the Iberá Wetlands, Corrientes, Argentina.',
         url: 'https://www.cabanasibera.com.ar/',

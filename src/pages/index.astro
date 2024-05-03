@@ -5,11 +5,14 @@ import { socials, technologies, projects } from '../constants/consts';
 import Experience from '../components/Experience.astro';
 import SocialNetworks from '../components/SocialNetworks.astro';
 import Projects from '../components/Projects.astro';
+
+const currentYear = new Date().getFullYear();
+const yearIStarted = 2022;
 ---
 
 <Layout title="Matias Acosta Developer">
     <main>
-        <section id="home" class="w-full mx-auto lg:w-[810px] pt-44 pb-8">
+        <section id="home" class="w-full mx-auto lg:w-[900px] pt-44 pb-22">
             <h1 class="flex flex-row gap-x-4 items-center text-white text-4xl py-4 font-bold">
                 <img class="size-12 rounded-3xl" src="/assets/img/logo.jpeg" alt="">
                 I'm Matias 
@@ -24,14 +27,14 @@ import Projects from '../components/Projects.astro';
                 <SocialNetworks social={socials}/>
             </section>
         </section>
-        <section id="work" class="w-full mx-auto lg:w-[810px] py-16">
+        <section id="work" class="w-full mx-auto lg:w-[900px] py-32">
             <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
                 <img class="size-12 mr-2" src="/assets/img/stack.svg" alt="">
                 Work Experience
             </h1>
             <Experience />
             <h2 class="text-white text-lg">
-                Over the last 2+ years I've been working with the following technologies:
+                Over the last {currentYear - yearIStarted}+ years I've been working with the following technologies:
             </h2>
             <Tecnologies techs={technologies}/>
         </section>
@@ -46,6 +49,20 @@ import Projects from '../components/Projects.astro';
 
                 ))
             }
+        </section>
+        <section id="aboutme" class="w-full mx-auto lg:w-[900px] py-22">
+            <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
+                <img class="size-12 mr-2" src="/assets/img/projects.svg" alt="">
+                About Me
+            </h1>
+            <section class="flex flex-row gap-x-4">
+                <h2 class="text-xl text-white">
+                    My name is Matias Acosta. I entered in the world of programming when I was 16 years old. <br> <br>
+                    Currently I'm 24 years old and I'm working as a full-stack developer at Banco de Corrientes specifically developing and mantaining the bank's online homebanking platform.
+                    I've been involved also in other projects such as the implementation of queue systems using RabbitMQ for internal transactions.
+                </h2>
+                <img class="size-96" src="/assets/img/recepcion.jpeg" alt="">
+            </section>
         </section>
     </main>
 </Layout>
