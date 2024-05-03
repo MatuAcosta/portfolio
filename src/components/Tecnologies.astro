@@ -2,7 +2,7 @@
 import TecnologiesBadge from "./TecnologiesBadge.astro";
 const { techs } = Astro.props;
 ---
-<ul class="grid grid-cols-5 gap-4 py-4">
+<ul class="grid grid-cols-2 lg:grid-cols-5 gap-4 py-4">
     {
         techs.map((tech: {name: string, icon: string}) => (
             <TecnologiesBadge tech={tech} />

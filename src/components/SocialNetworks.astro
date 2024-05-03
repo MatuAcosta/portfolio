@@ -1,7 +1,7 @@
 ---
 const { social } = Astro.props;
 ---
-<ul class="grid grid-cols-4 gap-4 py-4">
+<ul class="grid grid-cols-2 lg:grid-cols-4 gap-4 py-4">
     {
         social.map((socialnet: {name: string, icon: string, url: string}) => (
             <a href={socialnet.name !== 'Download CV' ? socialnet.url : `/assets/cv/${socialnet.url}`} target="_blank" download={socialnet.name === 'Download CV' ? socialnet.url : null}>

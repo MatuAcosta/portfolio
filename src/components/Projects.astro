@@ -4,24 +4,24 @@ const { project } = Astro.props;
 
 ---
 
-<section class="flex flex-row gap-x-8 w-full py-8">
-    <section class="flex flex-col gap-y-4">
-        <img class="w-[540px] h-96 border-2 border-emerald-400 hover:scale-105 duration-500" src={project.src}>
-        <section class="flex flex-row gap-x-4 justify-center">
-            <a  class="hover:scale-95  w-28 py-2 text-white border-2 border-slate-400 rounded-lg text-center" style={ project.github === '' ? 'display:none' : ''} target="_blank" href={project.github}>
-                View Code
+<section class="flex flex-row gap-x-4 lg:gap-x-8 w-full py-8">
+    <section class="flex flex-col gap-y-4 px-1">
+        <img class="hidden lg:block w-48 h-48 lg:w-[540px] lg:h-96 border-2 border-emerald-400 hover:scale-105 duration-500" src={project.src}>
+        <section class="flex flex-col gap-y-2 lg:flex-row gap-x-4 justify-center">
+            <a  class="hover:scale-95 hover:bg-slate-300 hover:text-black duration-400 w-12 lg:w-28 py-2 text-white border-2 border-slate-400 rounded-lg text-center text-sm lg:text-lg" style={ project.github === '' ? 'display:none' : ''} target="_blank" href={project.github}>
+                Code
             </a>
-            <a id="url" class="hover:scale-95  w-28 py-2 text-white border-2 border-slate-400 rounded-lg text-center" target="_blank" href={project.url}> Visit </a>
+            <a id="url" class="hover:scale-95 hover:bg-slate-300 hover:text-black duration-400 w-12 lg:w-28 py-2 text-white border-2 border-slate-400 rounded-lg text-center text-sm lg:text-lg" target="_blank" href={project.url}> Visit </a>
         </section>
     </section>
-    <section class="flex flex-col gap-y-3 items-center w-1/2">
-        <h2 class="font-bold text-3xl" class:list={project.colortitleStyle}>
+    <section class="flex flex-col gap-y-3 items-center lg:w-1/2">
+        <h2 class="font-bold text-xl lg:text-3xl" class:list={project.colortitleStyle}>
             {project.name}
         </h2>
-        <h2 class="text-lg text-white">
+        <h2 class="text-sm lg:text-lg text-white">
             {project.description}
         </h2>
-        <section class="flex flex-row gap-x-6">
+        <section class="flex flex-row gap-x-3 lg:gap-x-6 flex-wrap gap-y-2">
             {
                 project.tecnologies.map((tech: any) => (
                     <TecnologiesBadge tech={tech}/>
