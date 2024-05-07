@@ -89,7 +89,7 @@ export const projects = [
         description: 'Cabañas Iberá is a website for a rural tourism business located in the Iberá Wetlands, Corrientes, Argentina.',
         url: 'https://cabanias-ibera.pages.dev/home',
         github: '',
-        src: '/assets/img/cabanasibera.png',
+        src: '/assets/img/cabaniasibera.png',
         tecnologies: [{
             name: 'Angular',
             icon: '/assets/img/angular.svg'
