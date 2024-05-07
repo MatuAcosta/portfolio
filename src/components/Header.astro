@@ -30,8 +30,12 @@
     </nav>
 </header>
 <script>
+
     const nav = document.querySelector('nav');
     const links = nav?.querySelectorAll('a');
+    if (links) {
+        links[0].classList.add('text-blue-400');
+    }
     links?.forEach(link => {
         link.addEventListener('click', (e: any) => {
             links.forEach(l => {
