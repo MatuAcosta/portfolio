@@ -56,7 +56,7 @@ export const socials = [
         url: 'mailto:matiaseacosta18@gmail.com'
     },
     {
-        name: 'Download CV',
+        name: 'Resume',
         icon: `${path}cv.svg`,
         url: `cv_acostamatias.pdf`
     }
