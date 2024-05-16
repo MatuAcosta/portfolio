@@ -43,12 +43,14 @@ const yearIStarted = 2022;
                 <img class="size-12 mr-2" src="/assets/img/projects.svg" alt="">
                 Personal Projects
             </h1>
-            {
-                projects.map(project => (
-                    <Projects  project={project} />
-
-                ))
-            }
+            <section class="flex gap-x-10 gap-y-4 flex-wrap">
+                {
+                    projects.map(project => (
+                        <Projects   project={project} />
+    
+                    ))
+                }
+            </section>
         </section>
         <section id="aboutme" class="px-2 w-full mx-auto lg:w-[1000px] py-22">
             <h1 class="flex flex-row items-center text-white text-4xl py-6 font-bold ">
