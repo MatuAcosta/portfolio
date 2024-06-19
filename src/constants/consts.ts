@@ -99,5 +99,21 @@ export const projects = [
             icon: '/assets/img/tailwindcss.svg'
         },
     ]
-    }
+    },
+    {   
+        colortitleStyle: 'text-red-700',
+        name: 'Donde lo miro - Where to watch app',
+        description: 'Donde lo miro is a web app that allows users to search for movies and series and see where they can watch them in Argentina.',
+        url: 'https://dondelomiro.pages.dev',
+        github: '',
+        src: '/assets/img/dondelomiro.png',
+        tecnologies: [{
+            name: 'Angular',
+            icon: '/assets/img/angular.svg'
+        }, 
+        {
+            name: 'Tailwind',
+            icon: '/assets/img/tailwindcss.svg'
+        },
+    ]}, 
 ]
