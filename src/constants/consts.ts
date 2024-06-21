@@ -58,7 +58,7 @@ export const socials = [
     {
         name: 'Resume',
         icon: `${path}cv.svg`,
-        url: `cv_acostamatias.pdf`
+        url: `resume_acostamatias.pdf`
     }
 ]
 
