@@ -86,10 +86,11 @@ export const projects = [
     {
         colortitleStyle: 'text-lime-800',
         name: 'Cabañas Iberá - A website for a rural tourism business',
-        description: 'Cabañas Iberá is a website for a rural tourism business located in the Iberá Wetlands, Corrientes, Argentina.',
+        description: 'Cabañas Iberá is a website for a rural tourism business located in the Iberá Wetlands, Corrientes, Argentina. This was a project for a real client.',
         url: 'https://cabañasibera.com',
         github: '',
         src: '/assets/img/cabaniasibera.png',
+        realClient: true,
         tecnologies: [{
             name: 'Angular',
             icon: '/assets/img/angular.svg'
@@ -97,8 +98,7 @@ export const projects = [
         {
             name: 'Tailwind',
             icon: '/assets/img/tailwindcss.svg'
-        },
-    ]
+        },]
     },
     {   
         colortitleStyle: 'text-red-700',

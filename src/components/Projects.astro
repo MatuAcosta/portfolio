@@ -30,5 +30,17 @@ const { project } = Astro.props;
                 ))
             }
         </section>
+        {
+            project.realClient ? 
+             <section class="flex items-center gap-x-1 relative bottom-0 pt-4">
+                <img class="size-6" src="/assets/img/info.svg" alt="" />
+                <p class="text-yellow-200 font-bold text-sm italic">
+                    This project was built for a real client
+                </p>
+            </section>
+            : null
+        }
+
     </section>
+
 </section>
