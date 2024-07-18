@@ -43,7 +43,7 @@ export const socials = [
     {
         name: 'Linkedin',
         icon: `${path}linkedin.svg`,
-        url: 'https://www.linkedin.com/in/matias-acosta-5a50041b5/'
+        url: 'www.linkedin.com/in/matias-acosta18'
     },
     {
         name: 'Github',
