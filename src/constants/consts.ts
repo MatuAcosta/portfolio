@@ -5,6 +5,14 @@ export  const technologies = [
         icon: `${path}angular.svg`
     }, 
     {
+        name: 'NextJS',
+        icon: `${path}nextjs.svg`
+    },
+    {
+        name: 'Python',
+        icon: `${path}python.svg`
+    },
+    {
         name: 'Javascript',
         icon: `${path}javascript.svg`
     },
