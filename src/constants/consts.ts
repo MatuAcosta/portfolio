@@ -66,7 +66,7 @@ export const socials = [
     {
         name: 'Resume',
         icon: `${path}cv.svg`,
-        url: `resume_acostamatias.pdf`
+        url: `https://pub-0be5b88780de4e4a9170efb01be4511f.r2.dev/resume_AcostaMatias_updated.pdf`
     }
 ]
 
@@ -124,4 +124,5 @@ export const projects = [
             icon: '/assets/img/tailwindcss.svg'
         },
     ]}, 
+
 ]
